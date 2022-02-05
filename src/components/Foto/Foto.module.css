@@ -1,0 +1,7 @@
+.foto {
+    width: 25%;  /* Me quedan dos filas con cuatro imagenes cada una*/   
+}
+
+.foto img {
+    width: 100%
+}

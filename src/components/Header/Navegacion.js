@@ -6,10 +6,10 @@ const Navegacion = () => {
         <nav className={classes.nav}>
           <ul>
               <li>
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">Clases</a>
+                <a href="clases">Clases</a>
               </li>
               <li>
                 <a href="/">Trainers</a>
