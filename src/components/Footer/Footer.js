@@ -1,4 +1,5 @@
 import React from 'react';
+import Socials from '../Socials/Socials';
 import classes from './Footer.module.css';
 
 const Footer = () => {
@@ -11,12 +12,7 @@ const Footer = () => {
                 sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             
-            <ul className={classes['socials']}>
-                <li><i ></i>Facebook</li>
-                <li><i ></i>Facebook</li>
-                <li><i ></i>Facebook</li>
-                
-            </ul>
+            <Socials />
 
             <div className={classes['footerBottom']}>
                 <p>copyright Todos los derechos reservados Facundo Correa 2020</p>

@@ -26,19 +26,6 @@
     font-size: 10px; 
 }
 
-
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0rem 3rem 0 ;
-}
-
-.socials li{
-    margin: 0 10px;
-}
-
 .footerBottom{
     background-color:darkseagreen ;
     width: 100%;
@@ -50,4 +37,5 @@
     font-size: 14px;
     text-transform: capitalize ;
 }
+
 

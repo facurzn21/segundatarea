@@ -1,0 +1,25 @@
+.socialContainer {
+    padding: 25px 50px;
+}
+
+.socialContainer a {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+.socialContainer a:hover {
+    transform: translateY(-2px);
+}
+  
+a.youtubeSocial {
+    color: #eb3223;
+}
+  
+a.facebookSocial {
+    color: #4968ad;
+}
+  
+a.instagramSocial {
+    color: black;
+}
