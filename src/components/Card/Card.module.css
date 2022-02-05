@@ -13,3 +13,17 @@
     justify-content: space-around;
     padding: 10px;
 }
+
+.tarjeta a {  /* Para que el boton read more quede en negro y subrayado*/
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.tarjeta h3{
+    font-style: italic; 
+}
+
+.tarjeta:hover{
+    background-color:coral;
+}

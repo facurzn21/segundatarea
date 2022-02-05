@@ -14,3 +14,9 @@
 .header h1 {
     color: white;
 }
+
+.image {
+    height: 100vh; /* 100% el alto de la ventana*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
