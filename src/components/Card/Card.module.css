@@ -1,0 +1,15 @@
+.tarjeta{
+    text-align: center;
+    box-shadow: -1px 0px 5px black;
+    width: fit-content;
+    background: white;
+    padding: 40px 0px;
+    border-radius: 6px;
+}
+
+.contenedortarjetas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
