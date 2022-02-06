@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 
 import { Routes, Route, Link} from 'react-router-dom';
 import Clases from './components/Clases/Clases';
+import Trainers from './components/Trainers/Trainers';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="clases" element={<Clases />} />
+        <Route path='/trainers' element={<Trainers />} />
       </Routes>
       <Header />
      

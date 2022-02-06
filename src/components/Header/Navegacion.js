@@ -12,7 +12,7 @@ const Navegacion = () => {
                 <a href="clases">Clases</a>
               </li>
               <li>
-                <a href="/">Trainers</a>
+                <a href="trainers">Trainers</a>
               </li>
               <li>
                 <a href="/">Contacto</a>
