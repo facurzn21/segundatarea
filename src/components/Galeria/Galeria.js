@@ -11,8 +11,11 @@ import foto7 from '../../assets/gal-7.jpg';
 import foto8 from '../../assets/gal-8.jpg';
 
 const Galeria = () => {
+    //se crea componente foto para ser reutilizado
     return (
+        //clase galeria es la misma que se utiliza en la primera tarea
         <div className={classes.galeria}>
+            {/* se le pasa src como props al componente foto siendo esta su direccion en la carpeta assets */}
             <Foto src={foto1} />
             <Foto src={foto2} />
             <Foto src={foto3} />

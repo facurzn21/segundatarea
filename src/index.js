@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
+  // Agrego tag BrowserRouter para que funcionen las rutas 
   <BrowserRouter>
     <App />
   </BrowserRouter>,

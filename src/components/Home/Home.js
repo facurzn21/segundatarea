@@ -9,6 +9,7 @@ const Home = () => {
                 <h1> START YOUR FREE WORKOUT WITH US </h1>
             </div> 
             <div className={classes.row}>
+                {/* se define cada carta como componente y le paso el titulo como props */}
                 <Card title="CARDIO WORKOUTS"/>
                 <Card title="STRENGTH WORKOUTS" />
                 <Card title="PUMP WORKOUTS" />

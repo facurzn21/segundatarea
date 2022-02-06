@@ -8,19 +8,19 @@ import Clases from './components/Clases/Clases';
 import Trainers from './components/Trainers/Trainers';
 
 function App() {
-
-  let content = <Home />;
-
   return (
     <div className="App">
+      <App />
+      {/* Agrego rutas para navegacion entre paginas */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="clases" element={<Clases />} />
-        <Route path='/trainers' element={<Trainers />} />
+        <Route path='trainers' element={<Trainers />} />
       </Routes>
+      {/* Agrego header para mostrarlo en todas las paginas */}
       <Header />
-     
       <footer>
+        {/* Idem header pero footer */}
         <Footer />
       </footer>
     </div>

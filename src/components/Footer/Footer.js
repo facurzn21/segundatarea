@@ -12,6 +12,7 @@ const Footer = () => {
                 sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                 sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             
+            {/* Se pasan los socials a un componente */}
             <Socials />
 
             <div className={classes['footerBottom']}>

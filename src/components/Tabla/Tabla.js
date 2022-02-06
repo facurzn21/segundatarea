@@ -2,6 +2,8 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 
 const Tabla = props => {
+    //se instala dependencia react-bootstrap para utilizar tabla de manera responsive
+    //import el Componente Table para usarlo
     return (
         <Table striped bordered hover responsive="sm">
             <thead>
