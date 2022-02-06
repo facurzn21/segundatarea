@@ -27,3 +27,13 @@
 .tarjeta:hover{
     background-color:coral;
 }
+
+@media (max-width: 800px) {
+    .contenedorTarjetas{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+}
