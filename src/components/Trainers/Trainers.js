@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import ListaContactos from '../ListaContactos/ListaContactos';
 
 const Trainers = props => {
 
@@ -17,17 +18,9 @@ const Trainers = props => {
     };
 
     return (
-        personas.map((persona, index) => {
-            console.log(persona);
-            return (
-                <div key={persona.id} style={{paddingTop: '30px'}}>
-                    <img src={persona.avatar} />
-                    <h3>{persona.first_name} {persona.last_name}</h3>
-                    <p>{persona.email}</p>
-                </div>
-            );
-        })
-        
+        <div style={{paddingTop: '120px'}}>
+            <ListaContactos personas={personas} />
+        </div>
     );
 
 };
