@@ -11,6 +11,7 @@
     margin: 0 0 8px;
     padding: 16px;
     border: 1px solid #c5c5c5;
+    padding-top: 30px;
 }
 
 .card::after {

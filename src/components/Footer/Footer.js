@@ -3,6 +3,7 @@ import Socials from '../Socials/Socials';
 import classes from './Footer.module.css';
 
 const Footer = () => {
+    const anio = new Date().getFullYear();
     return (
         <div className={classes['footerContent']}>
             <h3>PowerFitness</h3>
@@ -16,7 +17,7 @@ const Footer = () => {
             <Socials />
 
             <div className={classes['footerBottom']}>
-                <p>copyright Todos los derechos reservados Facundo Correa 2020</p>
+                <p>copyright Todos los derechos reservados Facundo Correa {anio}</p>
             </div>
         </div>
     );

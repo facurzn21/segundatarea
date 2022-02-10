@@ -13,7 +13,7 @@ const ListaContactos = props => {
                 console.log(persona);
                 //Por cada persona en el array, muestro un div con su avatar, nombres y email
                 return (
-                    <div className={classes['card']} key={persona.id} style={{paddingTop: '30px'}}>
+                    <div className={classes['card']} key={persona.id}>
                         <aside>
                             <img className={classes.avatar} src={persona.avatar} alt={persona.first_name}/>
                         </aside>
@@ -24,7 +24,6 @@ const ListaContactos = props => {
                     </div>
                 );
             })
-            
         );
     }
     else{

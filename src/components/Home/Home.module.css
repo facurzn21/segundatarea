@@ -25,3 +25,15 @@
     margin: auto;
     padding-top: 100px;
 }
+
+@media (max-width: 800px) {
+    .titular h1 {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 801px) AND (max-width: 1060px){
+    .titular h1 {
+        font-size: 34px;
+    } 
+}

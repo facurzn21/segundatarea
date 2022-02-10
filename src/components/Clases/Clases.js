@@ -5,7 +5,7 @@ import Tabla from '../Tabla/Tabla';
 const myStyle = {
     textAlign: 'center',
     fontSize: '40px',
-    fontFamily: 'italic'
+    fontStyle: 'italic',
 };
 
 const Clases = props => {

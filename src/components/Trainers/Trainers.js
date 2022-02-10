@@ -2,10 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ListaContactos from '../ListaContactos/ListaContactos';
 
-const Trainers = props => {
+const Trainers = () => {
 
     //paso url a constante para no tenerlo hardcodeado
-    const url = 'https://random-data-api.com/api/users/random_user?size=5';
+    // const url = 'https://random-data-api.com/api/users/random_user?size=5';
 
     const [personas, setPersonas] = useState([]);
     //const [valor, setearValor] = useState(valorInicial);
@@ -17,7 +17,7 @@ const Trainers = props => {
     }, []);
 
     const getPersonas = () => {
-        axios.get(url)
+        axios.get('https://random-data-api.com/api/users/random_user?size=5')
             .then((res) => {
                 // seteo personas como el resultado de la llamada get de la url  
                 setPersonas(res.data);
@@ -26,7 +26,7 @@ const Trainers = props => {
 
     return (
         <div style={{paddingTop: '120px'}}>
-            {/* se crea componente ListaContactos al cual le paso la el array personas como props  */}
+            {/* se crea componente ListaContactos al cual le paso el array personas como props  */}
             <ListaContactos personas={personas} />
         </div>
     );
