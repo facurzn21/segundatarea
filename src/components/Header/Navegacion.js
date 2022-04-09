@@ -20,6 +20,9 @@ const Navegacion = () => {
               <li>
                 <a href="login">Login</a>
               </li>
+              <li>
+                <a href="registro">Registrarse</a>
+              </li>
           </ul>
         </nav>
     );

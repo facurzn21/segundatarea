@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Login.module.css';
+import classes from './Registro.module.css';
 
 
-const Login = () => {
+const Registro = () => {
     return (
       
         <div className={classes.container}>
-            <h1>Inciar Sesion</h1>
+           <h1>Registrarse</h1>
             <div className="form-group">
                 <label for="email">Email</label>
                 < input id="email" type="email" class="form-control" />
@@ -23,4 +23,4 @@ const Login = () => {
  );
 };
 
-export default Login;
+export default Registro;
