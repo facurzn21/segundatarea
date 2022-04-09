@@ -3,7 +3,7 @@ import Galeria from '../Galeria/Galeria';
 import Tabla from '../Tabla/Tabla';
 
 const myStyle = {
-    textAlign: 'center',
+    textAlign: 'center',    
     fontSize: '40px',
     fontStyle: 'italic',
 };

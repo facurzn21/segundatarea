@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import { Routes, Route} from 'react-router-dom';
 import Clases from './components/Clases/Clases';
 import Trainers from './components/Trainers/Trainers';
-
+import Login from './components/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/clases" element={<Clases />} />
         <Route path='/trainers' element={<Trainers />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       {/* Agrego header para mostrarlo en todas las paginas */}
       <Header />

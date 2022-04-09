@@ -17,6 +17,9 @@ const Navegacion = () => {
               <li>
                 <a href="/">Contacto</a>
               </li>
+              <li>
+                <a href="login">Login</a>
+              </li>
           </ul>
         </nav>
     );
