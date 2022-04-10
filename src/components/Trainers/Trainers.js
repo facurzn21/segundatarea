@@ -17,7 +17,7 @@ const Trainers = () => {
     }, []);
 
     const getPersonas = () => {
-        axios.get('https://random-data-api.com/api/users/random_user?size=5')
+        axios.get('https://localhost:3000/api/trainers')
             .then((res) => {
                 // seteo personas como el resultado de la llamada get de la url  
                 setPersonas(res.data);
