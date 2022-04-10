@@ -8,6 +8,7 @@ import Clases from './components/Clases/Clases';
 import Trainers from './components/Trainers/Trainers';
 import Login from './components/Login/Login';
 import Registro from './components/Registro/Registro';
+import Contacto from './components/Contacto/Contacto';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route path='/trainers' element={<Trainers />} />
         <Route path='/login' element={<Login />} />
         <Route path='/registro' element={<Registro />} />
+        <Route path='/contacto' element={<Contacto />} />
       </Routes>
       {/* Agrego header para mostrarlo en todas las paginas */}
       <Header />

@@ -15,7 +15,7 @@ const Navegacion = () => {
                 <a href="trainers">Trainers</a>
               </li>
               <li>
-                <a href="/">Contacto</a>
+                <a href="contacto">Contacto</a>
               </li>
               <li>
                 <a href="login">Login</a>
@@ -23,6 +23,7 @@ const Navegacion = () => {
               <li>
                 <a href="registro">Registrarse</a>
               </li>
+              
           </ul>
         </nav>
     );

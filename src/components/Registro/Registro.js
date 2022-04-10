@@ -5,7 +5,7 @@ import classes from './Registro.module.css';
 const Registro = () => {
     return (
       
-        <div className={classes.container}>
+        <div className={classes.container}> 
            <h1>Registrarse</h1>
             <div className="form-group">
                 <label for="email">Email</label>
