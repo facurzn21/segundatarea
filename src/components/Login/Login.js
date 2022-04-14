@@ -1,22 +1,18 @@
 import React,{ useState} from 'react';
 import classes from './Login.module.css';
 import axios from 'axios';
+import { Route, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [token, setToken] = useState('');
-    const [estaAutenticado, setEstaAutenticado] = useState(false);
-    const [userId, setUserId] = useState('');
-    const [tokenTimer, setTokenTimer] = useState(0);
+   
+    const navigate = useNavigate();
     //const [valor, setearValor] = useState(valorInicial);
 
-    const setAuthTimer =(duration) =>{
-        setTokenTimer(() => setTimeout(() => {
-                //logout;
-        }, duration * 1000));
-    }
+    
     //evito cargar cosas antes que se renderizen
     const submitHandler = (event) => {
         try {
@@ -24,25 +20,13 @@ const Login = () => {
             event.preventDefault();
             const url = 'http://localhost:3000/api/user/login';
             const data = { email: email, password: password};
-            // axios.post<{token: string, expiraEn: number, userId: string}>(url, data)
-            //     .then((res) => { 
-            //         const token = res.token;
-            //         setToken(token);
-            //         if(token) {
-            //             const expiraEn = res.expiraEn;
-            //             setAuthTimer(expiraEn);
-            //             setUserId(res.userId);
-                        
-            //         }
-            //         console.log(res);
-            //     }).catch(err => alert(err));
             axios.post(url, data)
                 .then((res) => { 
-                    const token = res.token;
+                    console.log(res.data);
+                    const token = res.data.token;
                     setToken(token);
-                    console.log(res.message);
                     if(token) {
-                        window.location('http://localhost:3001/home');
+                        navigate("/");
                     }
                     console.log(res);
                 }).catch(err => alert(err));
@@ -72,7 +56,7 @@ const Login = () => {
                     <input id="password" type="password" className="form-control" onChange={passHandler}/>
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-info" type='submit'>Submit</button>
+                    <button className="btn btn-info" type='submit'>Inciar Sesion</button>
                 </div>
             </form>
         </div>

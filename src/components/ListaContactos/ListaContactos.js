@@ -13,12 +13,12 @@ const ListaContactos = props => {
                 console.log(persona);
                 //Por cada persona en el array, muestro un div con su avatar, nombres y email
                 return (
-                    <div className={classes['card']} key={persona.id}>
+                    <div className={classes['card']} key={persona._id}>
                         <aside>
-                            <img className={classes.avatar} src={persona.avatar} alt={persona.first_name}/>
+                            <img className={classes.avatar} src={persona.avatar} alt={persona.nombre}/>
                         </aside>
                         <header>
-                            <h2 className={classes.cardTitle}>{persona.first_name} {persona.last_name}</h2>
+                            <h2 className={classes.cardTitle}>{persona.nombre} {persona.apellido}</h2>
                             <span className={classes.cardEmail}>{persona.email}</span>
                         </header>
                     </div>

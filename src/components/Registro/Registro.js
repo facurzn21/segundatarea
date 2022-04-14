@@ -1,6 +1,7 @@
 import React, {  useState } from 'react';
 import classes from './Registro.module.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 const Registro = () => {
@@ -9,6 +10,7 @@ const Registro = () => {
     const [password, setPassword] = useState('');
     //const [valor, setearValor] = useState(valorInicial);
 
+    const navigate = useNavigate();
     //evito cargar cosas antes que se renderizen
     const submitHandler = (event) => {
         try {
@@ -19,6 +21,7 @@ const Registro = () => {
             axios.post(url, data)
                 .then((res) => {  
                     console.log(res);
+                    navigate("/");
                 }).catch(err => alert(err));
             } catch (error) {
                 alert(error);   
@@ -51,7 +54,7 @@ const Registro = () => {
                     <input id="password" type="password" className="form-control" />
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-info" type='submit'>Submit</button>
+                    <button className="btn btn-info" type='submit'>Registrarse</button>
                 </div>
             </form>
         </div>

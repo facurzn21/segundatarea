@@ -9,16 +9,16 @@ const Contacto = () => {
         <div className={classes.container}>
             <h1>Contact with us </h1>
             <div className="form-group">
-                <label for="nombre y apeillo">Nombre y Apellido</label>
+                <label >Nombre y Apellido</label>
                 < input id="nombre y apellido" type="nombre y apellido" className="form-control" />
-                <label for="telefono">Telefono</label>
+                <label >Telefono</label>
                 < input id="telefono" type="telefono" className="form-control" />
-                <label for="email">Email</label>
+                <label >Email</label>
                 < input id="email" type="email" className="form-control" />
             </div>
-            <label for="consulta">Consulta</label>
+            <label >Consulta</label>
             <div className="form-group">
-                <textarea className="textarea" id='textarea' rows="8 " cols="150" maxLength="100"
+                <textarea className="from-control" id='textarea' rows="8" cols="130" maxLength="100"
                   minLength="3" placeholder='Escriba su consulta aqui'></textarea>
                 
         </div>
