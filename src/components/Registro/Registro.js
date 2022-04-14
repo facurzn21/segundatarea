@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import classes from './Registro.module.css';
 import axios from 'axios';
 
@@ -14,7 +14,7 @@ const Registro = () => {
         try {
             
             event.preventDefault();
-            const url = 'localhost:3000/api/user/signup';
+            const url = 'http://localhost:3000/api/user/signup';
             const data = { email: email, password: password};
             axios.post(url, data)
                 .then((res) => {  
