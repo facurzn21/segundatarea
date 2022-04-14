@@ -12,8 +12,8 @@ const Registro = () => {
 
     const navigate = useNavigate();
     //evito cargar cosas antes que se renderizen
-    const submitHandler = (event) => {
-        try {
+    const submitHandler = (event) => {  // Manejo de Registro cuando se envia formulario
+        try { 
             
             event.preventDefault();
             const url = 'http://localhost:3000/api/user/signup';
@@ -21,17 +21,17 @@ const Registro = () => {
             axios.post(url, data)
                 .then((res) => {  
                     console.log(res);
-                    navigate("/");
+                    navigate("/");   // Si el registro queda bien, se navega en la pagina de inicio 
                 }).catch(err => alert(err));
             } catch (error) {
                 alert(error);   
             }
         
     };
-    const emailHandler = (event) => {
+    const emailHandler = (event) => { // se guarda lo que se escribe en el campo email
         setEmail(event.target.value);
     };
-    const passHandler = (event) => {
+    const passHandler = (event) => {  // se guarda lo que se escribe en el campo contraseña
         setPassword(event.target.value);
 
     };

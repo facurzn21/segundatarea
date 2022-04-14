@@ -14,7 +14,7 @@ const Login = () => {
 
     
     //evito cargar cosas antes que se renderizen
-    const submitHandler = (event) => {
+    const submitHandler = (event) => {  // Manejo de Login cuando se envia formulario
         try {
             
             event.preventDefault();
@@ -23,7 +23,7 @@ const Login = () => {
             axios.post(url, data)
                 .then((res) => { 
                     console.log(res.data);
-                    const token = res.data.token;
+                    const token = res.data.token; // se devuelve json web token
                     setToken(token);
                     if(token) {
                         navigate("/");
@@ -35,10 +35,10 @@ const Login = () => {
             }
         
     };
-    const emailHandler = (event) => {
+    const emailHandler = (event) => { // se guarda lo que se escribe en el campo email
         setEmail(event.target.value);
     };
-    const passHandler = (event) => {
+    const passHandler = (event) => {// se guarda lo que se escribe en el campo contraseña 
         setPassword(event.target.value);
 
     };
